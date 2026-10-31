@@ -110,3 +110,12 @@ export const SECRET_BOUNDARY = {
     "Server-side scrapers with remote-owned keys (never NEXT_PUBLIC_*)",
   ],
 } as const;
+
+/** Resolve Twitch game name for the host when composing the `twitch` slot (server-safe). */
+export function resolveGtaTwitchGameName(game: VerticalGameHeader): string {
+  return (
+    game.twitchGameName ??
+    GTA5_VERTICAL_DEFINITION.defaultTwitchGameName ??
+    game.name
+  );
+}

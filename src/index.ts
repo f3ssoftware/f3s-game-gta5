@@ -1,7 +1,4 @@
-export {
-  default as GtaVVerticalView,
-  resolveGtaTwitchGameName,
-} from "./GtaVVerticalView";
+export { default as GtaVVerticalView } from "./GtaVVerticalView";
 export type { GtaVVerticalViewProps } from "./GtaVVerticalView";
 
 export {
@@ -10,6 +7,7 @@ export {
   GTA5_PUBLIC_PATH,
   GTA5_VERTICAL_DEFINITION,
   SECRET_BOUNDARY,
+  resolveGtaTwitchGameName,
 } from "./contract";
 export type { VerticalGameHeader } from "./contract";
 
