@@ -30,6 +30,7 @@
     "LICENSE"
   ],
   "scripts": {
+    "build": "tsc --noEmit",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
@@ -40,7 +41,9 @@
     "react-dom": "^18.2.0 || ^19"
   },
   "devDependencies": {
+    "@types/node": "^20.19.9",
     "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
     "next": "^15.5.18",
     "next-intl": "^4.13.0",
     "primereact": "^10.8.3",

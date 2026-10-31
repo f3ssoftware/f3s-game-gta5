@@ -14,6 +14,16 @@ The catalog host [`f3sNextjsSite`](https://github.com/f3ssoftware/f3sNextjsSite)
 
 See [`docs/HOST_REMOTE_CONTRACT.md`](./docs/HOST_REMOTE_CONTRACT.md).
 
+## Scripts
+
+```bash
+npm install
+npm run build      # TypeScript check (host transpilePackages consumes src/)
+npm run typecheck  # alias of build
+```
+
+This package ships TypeScript/CSS source. `f3sNextjsSite` compiles it via `transpilePackages` — there is no separate `dist/` emit.
+
 ## Develop with the host
 
 ```bash
@@ -22,8 +32,8 @@ git clone https://github.com/f3ssoftware/f3s-game-gta5.git
 git clone https://github.com/f3ssoftware/f3sNextjsSite.git
 
 cd f3sNextjsSite
-# package.json already uses "file:../f3s-game-gta5" (or npm link)
 npm install
+# optional local override: npm install ../f3s-game-gta5
 npm run dev
 open http://localhost:3000/en/games/gta5
 ```
