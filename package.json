@@ -1,0 +1,51 @@
+{
+  "name": "@f3s/game-gta5",
+  "version": "0.1.0",
+  "description": "F3S open-source GTA V game vertical — UI, domain services, and BFF handlers mounted by f3sNextjsSite",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/f3ssoftware/f3s-game-gta5.git"
+  },
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./api/weekly-bonuses": "./src/api/weekly-bonuses.ts",
+    "./api/today": "./src/api/today.ts",
+    "./api/rp-servers": "./src/api/rp-servers.ts",
+    "./api/vehicles": "./src/api/vehicles.ts",
+    "./contract": "./src/contract.ts"
+  },
+  "sideEffects": [
+    "**/*.css",
+    "**/*.module.css"
+  ],
+  "files": [
+    "src",
+    "docs",
+    "README.md",
+    "CONTRIBUTING.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "next": ">=14",
+    "next-intl": ">=3",
+    "primereact": ">=10",
+    "react": "^18.2.0 || ^19",
+    "react-dom": "^18.2.0 || ^19"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.11",
+    "next": "^15.5.18",
+    "next-intl": "^4.13.0",
+    "primereact": "^10.8.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.6.2"
+  }
+}

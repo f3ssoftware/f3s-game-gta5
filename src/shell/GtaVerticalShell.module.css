@@ -1,0 +1,29 @@
+.shell {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.inner {
+  padding-top: 1.25rem;
+  padding-bottom: 2.5rem;
+  box-sizing: border-box;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+/* GTA V accent — subtle Rockstar-adjacent gold on dark */
+.shell.gta5,
+.shell.gta-v {
+  --vertical-accent: #f0c040;
+  --vertical-accent-muted: rgba(240, 192, 64, 0.15);
+}
+
+.shell.tibia {
+  --vertical-accent: #66c0f4;
+  --vertical-accent-muted: rgba(102, 192, 244, 0.12);
+}

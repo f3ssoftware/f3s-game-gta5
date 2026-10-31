@@ -1,0 +1,70 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #24262b;
+  border-radius: 8px;
+  padding: 1rem 1.125rem;
+  min-width: 0;
+  box-sizing: border-box;
+  border: 1px solid rgba(102, 192, 244, 0.12);
+}
+
+.cardAccent {
+  border-color: var(--vertical-accent-muted, rgba(102, 192, 244, 0.12));
+}
+
+.media {
+  margin-bottom: 0.75rem;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #0d0e10;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mediaImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.label {
+  margin: 0 0 0.25rem;
+  color: #8f98a0;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  margin: 0 0 0.35rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.desc {
+  margin: 0;
+  color: #c5cdd4;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #1a1c20;
+  background: var(--vertical-accent, #fb993e);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  width: fit-content;
+}
